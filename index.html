@@ -189,6 +189,14 @@
                 <input type="tel" name="phone" id="phone" placeholder="Phone">
                 <label for="email" class="blind">email</label>
                 <input type="email" name="email" id="email" placeholder="Email Address">
+                <label for="time" class="blind"></label>
+                <select name="time" id="time"> 
+                  <option value="0">상담 시간</option>
+                  <option value="오전">09:00 ~ 12:00</option>
+                  <option value="오후">13:00 ~ 18:00</option>
+                  <option value="기타">기타(가능한 시간을 message에 적어주세요)</option>
+                </select>
+               
               </div>
               <div class="textarea">
                 <label for="message" class="blind">message</label>
@@ -216,9 +224,10 @@
 
      <!--푸터 -->
      <footer class="footer">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12677.666523389129!2d126.9303398!3d37.4036262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d68e3370132ec94!2z64yA66a864yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1609904736710!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa25v_DygfDURV6LKiGfi2Js&key=AIzaSyC73NMMY8LJ8qG1j_rKaXcVPv4obr7Edbo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+     
       <p>MYFIRSTSITE.COM</p>
-      <p class="copyright">경기도 안양시 동안구 비산동 임곡로 29 대림대학교 컴퓨터 정보학부 모바일인터넷과경기도 안양시 동안구 비산동 임곡로 29 대림대학교 컴퓨터 정보학부 모바일인터넷과경기도 안양시 동안구 비산동 임곡로 29 대림대학교 컴퓨터 정보학부 모바일인터넷과</p>
+      <p class="copyright">주소 : 서울 관악구 인헌길 94</p>
     </footer>
      
     </div>
@@ -229,13 +238,20 @@
      (function(){ emailjs.init("user_VlwmUoWMIk1oSuF0PXJ95");
      })();
 
+
+     
+
+
+
      window.onload = function(){
-      document.getElementById('myForm1').addEventListener('submit', function(event) { 
+      document.getElementById('myForm').addEventListener('submit', function(event) { 
         event.preventDefault(); 
-        this.name.value = Math.random() * 100000 | 0; 
+        
 
         // 서비스 id, 이메일 템플릿 
         emailjs.sendForm('service_amhck9k', 'template_1mhb0x6', this);
+        console.log("전송");
+        alert("전송되었습니다");
        }); 
       }
 

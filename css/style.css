@@ -254,6 +254,15 @@ header .gnb{
        background: #e3e6f7;
        outline: none;
    }
+   .contact-section .form-box .form select{
+    padding: 6px;
+    margin-bottom: 38px;
+    box-sizing: border-box;
+}
+.contact-section .form-box .form select:focus{
+    background: #e3e6f7;
+    outline: none;
+}
    .contact-section .form-box .textarea textarea{
        height: 174px;
        padding: 6px;
