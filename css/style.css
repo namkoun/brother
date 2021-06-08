@@ -91,11 +91,12 @@ header .gnb{
 .header .menu-toggle-btn span:nth-child(2){
     margin: 5px 0;
 }
-.slider img{
+.slider video{
     display: block;
-    width: 1200px;
+    width: 100%;
     
     height: auto;
+    margin-top: 5px;
 }
 /* display */
 .display_section{
@@ -109,6 +110,7 @@ header .gnb{
     font-family: 'Noto Sans KR', sans-serif;
     color: #616161;
     line-height: 1.9;
+
 }
 
 /* promotion */
@@ -430,7 +432,9 @@ header .gnb{
         text-align: left;
         
      }
-
+     .desc1{
+        margin-right: 600px;
+    }
      .display_section .sec-title{
         float: left;
         margin-bottom: 50px;

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1,
     minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <title>나의 첫번째 사이트</title>
+    <title>형제건설</title>
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
     
@@ -18,15 +18,14 @@
     <div id="wrap">
      <!-- 해더 -->
    <header class="cfixed:after header">
-       <h1 class="logo"><a href="#">MY EWB SITE</a> </h1>
+       <h1 class="logo"><a href="#">형제건설</a> </h1>
 
        <nav>
            <ul class="gnb">
-               <li><a href="">HOME</a></li>
-               <li><a href="">MY STORY</a></li>
-               <li><a href="">WORK</a></li>
-               <li><a href="">BLOG</a></li>
-               <li><a href="">CONTACT</a></li>
+               <li><a href="#">HOME</a></li>
+               <li><a href="#work_section_id">WORK</a></li>
+               <li><a href="#blog_section-id">BLOG</a></li>
+               <li><a href="#contact-section-id">CONTACT</a></li>
            </ul>
        </nav>
        
@@ -38,8 +37,12 @@
 
     </header>
 
-    <!--슬라이더  -->
-   <article class="slider"><img src="./images/photo/3.jpg" alt=""></article>
+    <!--영상  -->
+   <article class="slider">
+     
+    <video muted autoplay loop><source src="./video/Architecture - 303.mp4
+      " type="video/mp4"><strong>당신의 브라우저는 비디오가 안나옴</strong></video>
+   </article>
 
           <!--상단  -->
           <!-- 본문 -->
@@ -49,8 +52,8 @@
     <!-- 디스플레이 -->
    <section class="display_section">
     <div class="container">
-     <h2 class="sec-title">MY STORY</h2>
-     <p class="desc">동해물과 백두산이 마르고 닮도록 하느님이 보우하사 우리나라 만세 <br />동해물과 백두산이 마르고 닮도록 하느님이 보우하사 우리나라 만세</p>
+     <h2 class="sec-title">HOME</h2>
+     <p class="desc desc1">서울시 관악구 인헌동 <br />건물 철거 전문 회사</p>
     </div>
     </section>
 
@@ -58,34 +61,35 @@
    <section class="promotion_section">
      <div class="container">
        <ul class="promo_list">
+         
          <li>
-           <a href="">
-           <img src="./images/layout_img/blogger.png"alt="">
-           <h3>HOME</h3>
-           <P>동해물과 백두산이 마르고 닮도록 하느님이 보우하사 우리나라 만세</P>
-           </a>
-         </li>
-         <li>
-          <a href="">
+          <a href="#">
             <img src="./images/layout_img/house.png"alt="">
-            <h3>MY STORY</h3>
-            <P>동해물과 백두산이 마르고 닮도록 하느님이 보우하사 우리나라 만세</P>
+            <h3>START</h3>
+            <P>처음으로</P>
             </a>
          </li>
          <li>
-          <a href="">
+          <a href="#work_section_id">
             <img src="./images/layout_img/man.png"alt="">
             <h3>WORK</h3>
-            <P>동해물과 백두산이 마르고 닮도록 하느님이 보우하사 우리나라 만세</P>
+            <P>그동안 현장을 볼수 있습니다</P>
             </a>
          </li>
          <li>
-          <a href="">
+          <a href="#blog_section-id">
             <img src="./images/layout_img/work-space.png"alt="">
             <h3>BLOG</h3>
-            <P>동해물과 백두산이 마르고 닮도록 하느님이 보우하사 우리나라 만세</P>
+            <P>일하는 모습입니다.</P>
             </a>
          </li>
+         <li>
+          <a href="#contact-section-id">
+          <img src="./images/layout_img/blogger.png"alt="">
+          <h3>CONSULTING</h3>
+          <P>상담신청을 할수 있습니다.</P>
+          </a>
+        </li>
        </ul>
      </div>
     </section>
@@ -96,14 +100,14 @@
     <hr class="divider">
 
     <!-- 워크 -->
-   <section class="work_section cfixed">
+   <section class="work_section cfixed" id="work_section_id">
       <h2 class="sec-title">WORK</h2>
       <ul class="work-list">
         <li>
           <a href="">
           <div class="info">
            <h3>WebSite</h3>
-           <span>UX UL DESIGN AND PROGRAMMING</span>
+           <span>my portfolio test design</span>
           </div>
          <img src="./images/photo/1.jpg" alt="">
         </a>
@@ -112,7 +116,7 @@
           <a href="">
           <div class="info">
            <h3>WebSite</h3>
-           <span>UX UL DESIGN AND PROGRAMMING</span>
+           <span>my portfolio test design</span>
           </div>
           <img src="./images/photo/2.jpg" alt="">
           </a>
@@ -121,7 +125,7 @@
           <a href="">
           <div class="info">
            <h3>WebSite</h3>
-           <span>UX UL DESIGN AND PROGRAMMING</span>
+           <span>my portfolio test design</span>
           </div>
           <img src="./images/photo/12.jpg" alt="">
           </a>
@@ -130,7 +134,7 @@
           <a href="">
           <div class="info">
            <h3>WebSite</h3>
-           <span>UX UL DESIGN AND PROGRAMMING</span>
+           <span>my portfolio test design</span>
           </div>
           <img src="./images/photo/4.jpg" alt="">
           </a>
@@ -150,24 +154,24 @@
     <hr class="m-divider">
       
     <!-- 블로그 -->
-    <section class="blog_section">
+    <section class="blog_section" id="blog_section-id">
       <div class="container">
         <h2 class="sec-title">BLOG</h2>
         <ul class="blog-list">
           <li>
             <a href=""><img src="./images/photo/9.jpg" alt=""></a>
-            <time datetime="2021-01-01">january 01, 2021</time>
-            <a href=""><h3>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세</h3></a>
+            <time datetime="2021-01-01">May 05, 2021</time>
+            <a href=""><h3>철거 현장</h3></a>
           </li>
           <li>
             <a href=""><img src="./images/photo/10.jpg" alt=""></a>
-            <time datetime="2021-01-01">january 01, 2021</time>
-            <a href=""><h3>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세</h3></a>
+            <time datetime="2021-01-01">June 01, 2021</time>
+            <a href=""><h3>토목 공사</h3></a>
           </li>
           <li>
             <a href=""><img src="./images/photo/11.jpg" alt=""></a>
             <time datetime="2021-01-01">january 01, 2021</time>
-            <a href=""><h3>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세</h3></a>
+            <a href=""><h3>현장 사진</h3></a>
           </li>
         </ul>
       </div>
@@ -175,7 +179,7 @@
 
 
      <!-- 컨택트 -->
-     <section class="contact-section">
+     <section class="contact-section" id="contact-section-id">
       <div class="container">
         <h2 class="sec-title">CONTACT</h2>
         <div class="form-box">
@@ -184,11 +188,11 @@
               <legend class="blind">CONTACT US</legend>
               <div class="form">
                 <label for="name" class="blind">name</label>
-                <input type="text" name="name" id="name"  placeholder="Name">
+                <input type="text" name="name" id="name"  placeholder="이름">
                 <label for="phone" class="blind">phone</label>
-                <input type="tel" name="phone" id="phone" placeholder="Phone">
+                <input type="tel" name="phone" id="phone" placeholder="전화번호">
                 <label for="email" class="blind">email</label>
-                <input type="email" name="email" id="email" placeholder="Email Address">
+                <input type="email" name="email" id="email" placeholder="이메일">
                 <label for="time" class="blind"></label>
                 <select name="time" id="time"> 
                   <option value="0">상담 시간</option>
@@ -200,7 +204,7 @@
               </div>
               <div class="textarea">
                 <label for="message" class="blind">message</label>
-                <textarea name="message" name="message" id="message" placeholder="Message"></textarea>
+                <textarea name="message" name="message" id="message" placeholder="상담내용"></textarea>
               </div>
             </fieldset>
             <div class="send-btn">
@@ -226,7 +230,7 @@
      <footer class="footer">
       <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa25v_DygfDURV6LKiGfi2Js&key=AIzaSyC73NMMY8LJ8qG1j_rKaXcVPv4obr7Edbo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
      
-      <p>MYFIRSTSITE.COM</p>
+      <p>형제건설.COM</p>
       <p class="copyright">주소 : 서울 관악구 인헌길 94</p>
     </footer>
      
